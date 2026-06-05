@@ -1,4 +1,4 @@
-# Architecture — Pi-hole Homelab
+# Architecture: Pi-hole Homelab
 
 ## Overview
 
