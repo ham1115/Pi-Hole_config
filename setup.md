@@ -1,4 +1,4 @@
-# 🔧 Setup Guide — Pi-hole on Docker (Ubuntu)
+# Setup Guide: Pi-hole on Docker (Ubuntu)
 
 ## Prerequisites
 
@@ -90,7 +90,7 @@ services:
     restart: unless-stopped
 ```
 
-> ⚠️ **Security note**: Change `WEBPASSWORD` to a strong password. Never commit real passwords to a public repository — use environment variable files (`.env`) excluded via `.gitignore`.
+> ⚠️ **Security note**: Change `WEBPASSWORD` to a strong password. Never commit real passwords to a public repository, use environment variable files (`.env`) excluded via `.gitignore`.
 
 Start the container:
 
