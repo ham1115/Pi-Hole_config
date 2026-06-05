@@ -1,4 +1,4 @@
-# 🗺️ Architecture — Pi-hole Homelab
+# Architecture — Pi-hole Homelab
 
 ## Overview
 
@@ -12,9 +12,9 @@ This setup uses a repurposed Lenovo IdeaPad as a dedicated DNS server for the ho
 ┌─────────────────────────────────────────────────────┐
 │                   HOME NETWORK (LAN)                │
 │                                                     │
-│  ┌──────────┐   ┌──────────┐   ┌────────────────┐  │
-│  │  Laptop  │   │  Phone   │   │   Smart TV     │  │
-│  └────┬─────┘   └────┬─────┘   └───────┬────────┘  │
+│  ┌──────────┐   ┌──────────┐   ┌────────────────┐   │
+│  │  Laptop  │   │  Phone   │   │   Smart TV     │   │
+│  └────┬─────┘   └────┬─────┘   └───────┬────────┘   │
 │       │              │                 │            │
 │       └──────────────┴─────────────────┘            │
 │                       │                             │
@@ -24,7 +24,7 @@ This setup uses a repurposed Lenovo IdeaPad as a dedicated DNS server for the ho
 │          │   Lenovo IdeaPad         │               │
 │          │   Ubuntu Linux           │               │
 │          │   Static IP: [LAN IP]    │               │
-│          │                         │               │
+│          │                          │               │
 │          │  ┌─────────────────────┐ │               │
 │          │  │  Docker Container   │ │               │
 │          │  │  Pi-hole            │ │               │
@@ -40,7 +40,7 @@ This setup uses a repurposed Lenovo IdeaPad as a dedicated DNS server for the ho
                         │
             ┌───────────▼──────────────┐
             │   Upstream DNS Resolver  │
-            │   (e.g., 1.1.1.1 /      │
+            │   (e.g., 1.1.1.1 /       │
             │    8.8.8.8)              │
             └──────────────────────────┘
 ```
@@ -59,7 +59,7 @@ Pi-hole checks the queried domain against its aggregated blocklists containing m
 - **Allowed domain** → Pi-hole forwards the query to the configured upstream DNS resolver (e.g., Cloudflare `1.1.1.1`) and returns the real IP.
 
 ### 3. Network-Wide Coverage
-Because the DNS configuration is set at the **router level**, every device that joins the network automatically uses Pi-hole — no client-side software or configuration needed. This includes:
+Because the DNS configuration is set at the **router level**, every device that joins the network automatically uses Pi-hole, no client-side software or configuration needed. This includes:
 - Smartphones and tablets
 - Smart TVs and streaming sticks
 - IoT devices (smart bulbs, cameras, etc.)
