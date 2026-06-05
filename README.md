@@ -7,22 +7,6 @@ This project transforms an old laptop into a dedicated network security applianc
 
 Unlike browser-based ad blockers that only protect one device, this setup intercepts DNS queries from every device on the network (phones, smart TVs, IoT devices, PCs) with zero per-device configuration required.
 
-## Architecture
-
-[All Network Devices]
-        |
-        | DNS queries
-        ▼
-[Lenovo IdeaPad — Ubuntu 24.04]
-[Docker Container: Pi-hole]
-[Static LAN IP: acts as Primary DNS]
-        |
-        | Allowed queries forwarded to upstream DNS
-        ▼
-[Upstream DNS — ex., 1.1.1.1 / 8.8.8.8]
-
-See docs/architecture.md for a detailed diagram and explanation.
-
 ## Tech Stack
 | Component  | Details|
 | ------------- | ------------- |
@@ -43,11 +27,11 @@ See docs/architecture.md for a detailed diagram and explanation.
 Full step-by-step setup guide in docs/setup.md
 
 ## Results
-✅ Ads and trackers blocked network-wide across all devices
-✅ Smart TV ad domains blocked (no per-TV configuration needed)
-✅ Mobile devices protected without installing any app
-✅ Pi-hole dashboard provides real-time DNS query analytics
-✅ Custom blocklists added for malicious and phishing domains
+- ✅ Ads and trackers blocked network-wide across all devices
+- ✅ Smart TV ad domains blocked (no per-TV configuration needed)
+- ✅ Mobile devices protected without installing any app
+- ✅ Pi-hole dashboard provides real-time DNS query analytics
+- ✅ Custom blocklists added for malicious and phishing domains
 
 ## Security Notes
 - All real IP addresses, MAC addresses, and network-specific identifiers have been anonymized in this documentation
