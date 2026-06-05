@@ -1,6 +1,6 @@
-# 📋 Blocklists
+📋 Blocklists
 
-Pi-hole's effectiveness depends largely on its blocklists. This document outlines the blocklists used in this setup and the rationale for each.
+Pi-hole's effectiveness depends largely on its blocklists. This document outlines the blocklists used in this setup and the rationale for each. There are more blocklists available [here](https://github.com/hagezi/dns-blocklists)
 
 ---
 
